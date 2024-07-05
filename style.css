@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Margarine&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Margarine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-clr: #ff7550;
+    --bg-primary: #1f1d2a;
+    --bg-secondary: #252935;
+    --bg-ternary: #35333f;
+    --heading-clr: #efefef;
+    --text-clr: #808191;
+    --gradient: linear-gradient(to right, #35333f, transparent);
+}
+
+body {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.page-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-secondary);
+}
+
+/*! === Top Bar Tasarım Başlangıç === */
+.page-wrapper .top-bar {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background: var(--bg-primary);
+    border-bottom: 2px solid var(--bg-secondary);
+    z-index: 2;
+}
+
+.page-wrapper .top-bar .top-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .top-bar-left .hamburger-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.top-bar-left .hamburger-btn span {
+    width: 100%;
+    height: 2px;
+    background: var(--heading-clr);
+    border-radius: 15px;
+}
+
+.top-bar .top-bar-left .logo {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    color: var(--text-clr);
+}
+
+.top-bar .search-box {
+    position: relative;
+    width: 400px;
+    height: 37px;
+    left: -80px;
+    background: var(--bg-ternary);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .search-box .input-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0px 50px 0px 20px;
+    border-radius: inherit;
+    background: var(--bg-ternary);
+    color: var(--heading-clr);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+}
+
+.top-bar .search-box .search-btn {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    right: 0;
+    border-radius: 50px;
+    background: var(--bg-ternary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top-bar .search-box .search-btn i {
+    color: var(--primary-clr);
+    font-size: 15px;
+}
+
+.top-bar .top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-bar .top-bar-right .mode-switch,
+.top-bar .top-bar-right .notifications {
+    position: relative;
+}
+
+.top-bar .top-bar-right .mode-switch i,
+.top-bar .top-bar-right .notifications i {
+    font-size: 20px;
+    color: var(--text-clr);
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.top-bar .top-bar-right .mode-switch i:hover,
+.top-bar .top-bar-right .notifications i:hover {
+    color: var(--heading-clr);
+}
+
+.top-bar .top-bar-right .profile {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-left: 10px;
+    border-left: 2px solid var(--bg-ternary);
+}
+
+.top-bar .top-bar-right .profile img {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* === Top Bar Tasarım Bitiş === */
