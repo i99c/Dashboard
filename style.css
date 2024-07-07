@@ -375,6 +375,34 @@ body {
     color: var(--primary-clr);
 }
 
+/* Panel Bitiş */
+/* Descriptions Başlangıç */
+.contents .description {
+    width: 100%;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    background-color: yellow;
+}
+
+/* Column 1 Başlangıç */
+.contents .description .col-1 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    background: lightgreen;
+}
+
+.description .col-1 .balance-box {
+    position: relative;
+    width: 100%;
+}
+
+/* Column 1 Bitiş */
+/* Descriptions Bitiş */
 /* Contentler Bitiş */
 /* ------------------------------------------------------------------------------------- */
 /*? === Media Query Başlangıç === */
