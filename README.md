@@ -1,4 +1,5 @@
-Pages Github link:
+Pages Github link: https://i99c.github.io/Dashboard/
+
 Yazar kısmı için düzenlenen bir dashboard tasarımı
 
 Ekran görüntüsü:
